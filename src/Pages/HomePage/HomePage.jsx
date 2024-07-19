@@ -11,6 +11,17 @@ import TrendyCard from '../../Components/TrendyCard/TrendyCard'
 import HeroPage1 from "../../../public/images/HeroPage1.png"
 import citiesPhoto from "../../../public/images/ExploreCities.jpg"
 import nature from "../../../public/images/nature.webp"
+import flag from "../../../public/images/flag.svg"
+import plane from "../../../public/images/plane.svg"
+import hand from "../../../public/images/hand.svg"
+import doctor from "../../../public/images/doctor.svg"
+import swither from "../../../public/images/switherland.png"
+import switherflag from "../../../public/images/switherFlag.svg"
+import amazon from "../../../public/images/amazon.png"
+import amazonflag from "../../../public/images/brazilFlag.svg"
+import giza from "../../../public/images/giza.png"
+import gizaflag from "../../../public/images/egyptFlag.svg"
+
 
 
 
@@ -19,18 +30,18 @@ import nature from "../../../public/images/nature.webp"
 
 function HomePage() {
   let serviceCards =
-  [{ img: "flag.svg", service: "Guided Tours", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
-  { img: "plane.svg", service: "Best Flights Options", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
-  { img: "hand.svg", service: "Religious Tours", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
-  { img: "doctor.svg", service: "Medical insurance", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." }
+  [{ img: flag, service: "Guided Tours", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
+  { img: plane, service: "Best Flights Options", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
+  { img: hand, service: "Religious Tours", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." },
+  { img: doctor, service: "Medical insurance", desc: "sunt qui repellat saepe quo velit aperiam id aliquam placeat." }
   ]
 
 // Array Trendy card in home page
 let trendyCards =
   [
-    { image: "switherland.png", flag: "switherFlag.svg", daysNumber: 8, people: 30, rate: "100%", country: "Switzerland", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." },
-    { image: "amazon.png", flag: "brazilFlag.svg", daysNumber: 8, people: 60, rate: "88%", country: "Amazon", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." },
-    { image: "giza.png", flag: "egyptFlag.svg", daysNumber: 8, people: 120, rate: "100%", country: "Giza", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." }
+    { image: swither, flag: switherflag, daysNumber: 8, people: 30, rate: "100%", country: "Switzerland", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." },
+    { image: amazon, flag: amazonflag, daysNumber: 8, people: 60, rate: "88%", country: "Amazon", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." },
+    { image: giza, flag: gizaflag, daysNumber: 8, people: 120, rate: "100%", country: "Giza", desc: "Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos." }
   ]
   return (
     <div>
@@ -43,7 +54,7 @@ let trendyCards =
       <Services desc="CATEGORY" title="We Offer Best Services" gridService="grid-services-category" >
         {serviceCards.map((element, index) => {
           return (
-            <ServiceItem key={index} image={`../../../public/images/${element.img}`} service={element.service} description={element.desc} />
+            <ServiceItem key={index} image={element.img} service={element.service} description={element.desc} />
           )
         })}
       </Services>
@@ -59,7 +70,7 @@ let trendyCards =
       <Services desc="TRENDY" title="Our Trending Tour Packages" gridService="grid-services-trendy">
         {trendyCards.map((element, index) => {
           return (
-            <TrendyCard key={index} image={`../../../public/images/${element.image}`} flag={`../../../public/images/${element.flag}`} days={element.daysNumber} people={element.people}
+            <TrendyCard key={index} image={element.image} flag={element.flag} days={element.daysNumber} people={element.people}
               rate={element.rate} country={element.country} description={element.desc} />
           )
         })}
