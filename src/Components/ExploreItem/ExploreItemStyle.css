@@ -1,0 +1,50 @@
+.ExploreItem {
+    width: 50%;
+    height: 314px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.ExploreItem h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: rgba(255, 239, 236, 1);
+    text-transform: uppercase;
+}
+
+.ExploreItem h2 {
+    font-family: Volkhov;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--white);
+}
+
+.ExploreItem button {
+    width: 183px;
+    height: 58px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid var(--white);
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+    border-radius: 4px;
+    line-height: 22.5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.ExploreItem button:hover {
+    background-color: var(--orange);
+    border: none;
+}
+
+.ExploreItem button a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}

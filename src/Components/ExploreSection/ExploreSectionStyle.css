@@ -1,0 +1,11 @@
+.ExploreSection{
+    display: flex;
+}
+
+@media (max-width:800px) {
+    .ExploreSection{
+       flex-direction: column;
+    }
+    .ExploreItem{
+    width: 100% !important;
+}}

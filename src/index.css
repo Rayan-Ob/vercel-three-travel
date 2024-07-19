@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+:root {
+    --orange: rgba(223, 105, 81, 1);
+    --white:  rgba(255, 255, 255, 1);
+    --lightBlack:rgba(30, 29, 76, 1);
+  }
+  /* body{
+    overflow-x: hidden;
+  } */

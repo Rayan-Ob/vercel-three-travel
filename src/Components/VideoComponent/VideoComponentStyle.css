@@ -1,0 +1,44 @@
+.video-container {
+    padding: 70px 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+
+
+video[poster] {
+
+    width: 100%;
+    object-fit: fill;
+}
+
+.play-button {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 8;
+}
+
+@media (max-width:850px) {
+    .video-container{
+        height: 350px;
+    }
+    video{
+        height: 350px !important;
+    }
+    
+}
+
+@media (max-width:650px) {
+    .video-container{
+        height: 250px;
+    }
+    video{
+        height: 250px !important;
+    }
+    
+}

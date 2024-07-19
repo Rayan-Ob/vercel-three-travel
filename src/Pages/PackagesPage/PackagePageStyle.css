@@ -1,0 +1,23 @@
+.boxs-package-container{
+    padding: 90px 70px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 34px;
+    justify-content: center;
+}
+
+
+@media (max-width: 1150px) {
+    .boxs-package-container{
+        grid-template-columns: repeat(2,auto);
+
+    }
+}
+
+@media (max-width: 750px){
+    .boxs-package-container{
+        grid-template-columns: repeat(1,auto);
+
+    }
+
+}

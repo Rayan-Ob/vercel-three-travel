@@ -1,0 +1,115 @@
+.Tour-plan {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.Tour-plan-img {
+    display: flex;
+    align-items: center;
+}
+
+.Tour-plan-right {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    justify-content: center;
+    padding-right: 20px;
+    width: 45%;
+}
+
+.Tour-plan h5 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: rgba(223, 105, 81, 1)
+}
+
+.Tour-plan h2 {
+    font-family: Poppins;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 48px;
+    color: rgba(24, 30, 75, 1);
+}
+
+.Tour-plan p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: justified;
+    margin-top: 15px;
+}
+
+.Tour-plan-right button {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: center;
+    width: 169.38px;
+    height: 56.42px;
+    border-radius: 4px;
+    background-color: rgba(223, 105, 81, 1);
+    box-shadow: 0px 20px 35px 0px rgba(223, 105, 81, 0.15);
+    color: white;
+    border: none;
+}
+
+.tour-plan-honeymoon {
+    display: flex;
+    gap: 30px;
+}
+
+.tour-plan-honeymoon .num {
+    font-family: Poppins;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(125, 125, 125, 1);
+}
+
+.tour-plan-honeymoon .activate {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+.Tour-plan a{
+    text-decoration: none;
+
+    color: white;
+}
+
+@media (max-width:1200px) {
+    .Tour-plan img {
+        width: 400px;
+        height: 309px;
+    }
+}
+
+@media (max-width:992px) {
+    .Tour-plan {
+        flex-direction: column !important;
+        gap: 50px;
+    }
+
+    .Tour-plan-img {
+        margin: auto;
+
+    }
+
+    .Tour-plan-right {
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    .Tour-plan img {
+        width: 250px;
+        height: 193px;
+    }
+}
