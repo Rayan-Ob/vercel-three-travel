@@ -1,6 +1,10 @@
 import "./VideoComponentStyle.css"
 import { useState } from "react"
 
+import poster from "../../../public/images/img-video.png"
+import video from "../../../public/video/travel-video.mp4"
+import play from "../../../public/images/play-button.svg"
+
 
 function VideoComponent() {
   const [isPlaying, setisPlaying] = useState(false)
@@ -14,11 +18,11 @@ function VideoComponent() {
 
 <video controls ={isPlaying}
    width= "100%" height=" 432px"
-  poster="../../../public/images/img-video.png" playsInline>
-  <source src="../../../public/video/travel-video.mp4" type="video/mp4" />
+  poster={poster} playsInline>
+  <source src={video} type="video/mp4" />
 </video>
 <button className= "play-button" onClick={PlayPause} style={{visibility: isPlaying ? "hidden" :"visible"}}>
-  <img src="../../../public/images/play-button.svg" alt="" />
+  <img src={play} alt="" />
 </button>
 
 
