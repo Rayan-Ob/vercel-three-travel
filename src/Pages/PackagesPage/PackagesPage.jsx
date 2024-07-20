@@ -6,7 +6,7 @@ import heroimg from "../../../public/images/packagePage.png"
 
 import maldive from "../../../public/images/maladive.png"
 import swith from "../../../public/images/swith.png"
-import berlin from "../../../public/images/berlin"
+import berlin from "../../../public/images/berlin.png"
 import torrento from "../../../public/images/torronto.png"
 import baku from "../../../public/images/baku.png"
 import chiense from "../../../public/images/chiense.png"
